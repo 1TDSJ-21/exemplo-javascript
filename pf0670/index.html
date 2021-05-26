@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="" type="text/css">
+    <script src="./js/index.js" defer></script>
     <title>VIEW</title>
 
 </head>
@@ -24,59 +25,11 @@
         </div>
 
         <div>
-            <p>Player 1:</p>
+            <p id="p1">Player 1:</p>
         </div>
 
     </div>
-    <script>
-        //Declaração de Variáveis!
-        var nr1 = 100;
-        var nr2 = 109;
-        nr1 = "ALE";
 
-        //HOYSTING = ELEVAR/IÇAR/
-        //O hoysting ocorre sempre que se declara as variáveis ou constantes
-        //E faz com que as atribuições sejam içadas antes das declarações.
-
-        //Atrelando um elemento a uma variável - Através de ID.
-        const btn = document.querySelector('#btnSend');
-        const elementoP = document.querySelector('p');
-
-        //Atrelando um evento ao botão
-        btn.addEventListener('click', alteraNome);
-
-        function alteraNome() {
-            let nome = prompt("Digite o nome!");
-            elementoP.textContent = 'Player 1:' + nome;
-        }
-
-        //Vetores / Arrays
-        var frutas = ['maçã', 'banana', 'laranja', 'pêra'];
-
-        console.log('Posição 1 do vetor de Frutas - ' + frutas[0]);
-        console.log('Posição 2 do vetor de Frutas - ' + frutas[1]);
-        console.log('Posição 3 do vetor de Frutas - ' + frutas[2]);
-        //Estruturas de leitura para Vetores
-        console.table("Posição - " + frutas);
-        //for-in
-        //for(variavel in array){}
-        for (f in frutas) {
-            console.log("Fruta - " + frutas[f]);
-        }
-
-        //for-of
-        //for(variavel of array){}
-        for (f of frutas) {
-            console.log("Fruta - " + f);
-        }
-
-        //Verificando o resultado!
-        //Utilizando o caractére de concatenação na operação de adição,
-        // ele não vai realizar a operação e sim concatenar, então devemos
-        // utilizar a função do JS parseInt no caso se o valor for inteiro,
-        // ou parseDouble se for double e etc;
-        //alert("Resultado da operação! " + (parseInt(nr1) + parseInt(nr2)));
-    </script>
 </body>
 
 </html>
